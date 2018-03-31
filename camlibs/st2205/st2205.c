@@ -17,8 +17,9 @@
  * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
  * Boston, MA  02110-1301  USA
  */
-#define _BSD_SOURCE
-#define _POSIX_C_SOURCE 1
+
+/* for rand_r() */
+#define _POSIX_C_SOURCE 199506L
 #include "config.h"
 
 #include <stdio.h>
