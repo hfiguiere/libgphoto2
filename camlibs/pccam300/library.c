@@ -23,6 +23,8 @@
 /* Boston, MA  02110-1301  USA					*/
 /****************************************************************/
 
+#define _C99_SOURCE /* snprintf() on Darwin */
+
 #include <config.h>
 
 #include "pccam300.h"

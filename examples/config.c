@@ -1,3 +1,5 @@
+#define _POSIX_C_SOURCE 200112L /* for strdup() on Darwin */
+
 #include "samples.h"
 
 #include <string.h>

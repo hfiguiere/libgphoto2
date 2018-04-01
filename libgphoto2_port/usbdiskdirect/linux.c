@@ -18,6 +18,9 @@
  * Boston, MA  02110-1301  USA
  */
 
+#define _C99_SOURCE /* snprintf() on Darwin */
+#define _POSIX_C_SOURCE 200112L /* for readlink() on Darwin */
+
 #include "config.h"
 #include <gphoto2/gphoto2-port-library.h>
 

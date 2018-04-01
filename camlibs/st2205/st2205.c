@@ -18,8 +18,9 @@
  * Boston, MA  02110-1301  USA
  */
 
-/* for rand_r() */
-#define _POSIX_C_SOURCE 199506L
+#define _C99_SOURCE /* snprintf() on Darwin */
+#define _POSIX_C_SOURCE 199506L /* for rand_r() */
+
 #include "config.h"
 
 #include <stdio.h>

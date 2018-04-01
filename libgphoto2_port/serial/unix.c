@@ -27,6 +27,8 @@
  * Boston, MA  02110-1301  USA
  */
 
+#define _C99_SOURCE /* snprintf() on Darwin */
+
 /* Solaris needs this */
 #define __EXTENSIONS__
 

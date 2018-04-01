@@ -18,7 +18,9 @@
  * Boston, MA  02110-1301  USA
  */
 
+#define _C99_SOURCE /* snprintf() on Darwin */
 #define _DEFAULT_SOURCE	/* for flock */
+#define _DARWIN_C_SOURCE /* for flock() on Darwin */
 
 #include "config.h"
 #include <gphoto2/gphoto2-port-library.h>
