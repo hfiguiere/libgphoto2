@@ -59,8 +59,10 @@ static int get_jpeg_data(const char *data, int data_size, char **jpeg_data, int 
 /* Useful markers */
 static const char JPEG_SOI_MARKER[]  = { (char)0xFF, (char)0xD8, '\0' };
 static const char JPEG_SOF_MARKER[]  = { (char)0xFF, (char)0xD9, '\0' };
+#if 0 /* unused */
 static const char JPEG_APP1_MARKER[] = { (char)0xFF, (char)0xE1, '\0' };
 static const char TIFF_SOI_MARKER[]  = { (char)0x49, (char)0x49, (char)0x2A, (char)0x00, (char)0x08, '\0' };
+#endif
 
 static struct {
 	const char *manuf;

@@ -350,6 +350,7 @@ static const RegisterDescriptorType olysp500uz_reg_03[] = {
  * does not work well, since only about 30 of some 16 million values are
  * valid.
  */
+#if 0 /* unused */
 static const ValueNameType olyrange_reg_03_val_names[] = { 
 	{
 		{ .range = { 0, 16000000, 100 } }, NULL 
@@ -362,6 +363,7 @@ static const RegisterDescriptorType olyrange_reg_03[] = {
 		VAL_NAME_INIT (olyrange_reg_03_val_names)
 	}
 };
+#endif
 
 /*
  * Olympus 3040 Register 5: aperture settings. Works only in A or M mode
@@ -453,6 +455,7 @@ static const RegisterDescriptorType oly750uz_reg_05[] = {
 /*
  * Olympus SP-500uz Register 5: aperture settings.
  */
+#if 0 /* unused */
 static const ValueNameType olysp500uz_reg_05_val_names[] = {
 	{ { 0 }, N_("Auto") },
 	{ { 28 }, "F2.8" },
@@ -466,13 +469,14 @@ static const ValueNameType olysp500uz_reg_05_val_names[] = {
 	{ { 80 }, "F8.0" },
 	{ { 90 }, "F9.0" },
 };
-static const RegisterDescriptorType olysp500uz_reg_05[] = { 
+static const RegisterDescriptorType olysp500uz_reg_05[] = {
 	{
-		GP_WIDGET_MENU, GP_REG_NO_MASK, 
+		GP_WIDGET_MENU, GP_REG_NO_MASK,
 		"aperture", N_("Aperture Settings"),
 		VAL_NAME_INIT (olysp500uz_reg_05_val_names)
 	}
 };
+#endif
 /*
  * Register 6: color mode
  */
@@ -820,18 +824,20 @@ static const RegisterDescriptorType oly750uz_reg_71[] = {
 /*
  * Oly SP-500 uz Register 71: optical zoom value.
  */
+#if 0 /* unused */
 static const ValueNameType olysp500uz_reg_71_val_names[] = {
 	{
 		{ .range = { 6.3, 63.0, .3 } }, NULL
 	}
 };
-static const RegisterDescriptorType olysp500uz_reg_71[] = { 
+static const RegisterDescriptorType olysp500uz_reg_71[] = {
 	{
-		GP_WIDGET_RANGE, GP_REG_NO_MASK, 
+		GP_WIDGET_RANGE, GP_REG_NO_MASK,
 		"zoom", N_("Zoom (in millimeters)"),
 		VAL_NAME_INIT (olysp500uz_reg_71_val_names)
 	}
 };
+#endif
 
 /*
  * Oly 3040 Register 71: optical zoom value.

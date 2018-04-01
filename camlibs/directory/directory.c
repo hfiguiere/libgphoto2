@@ -740,10 +740,10 @@ storage_info_func (CameraFilesystem *fs,
                 int *nrofsinfos,
                 void *data, GPContext *context
 ) {
+#if defined(linux) && defined(HAVE_STATFS)
 	Camera 				*camera = data;
 	CameraStorageInformation	*sfs;
 
-#if defined(linux) && defined(HAVE_STATFS)
 	struct	statfs		stfs;
 	char *xpath;
 	int ret;

@@ -46,6 +46,7 @@
 #else
 # include <sys/socket.h>
 # include <netinet/in.h>
+# include <arpa/inet.h>
 #endif
 
 #include <gphoto2/gphoto2-library.h>
